@@ -3,7 +3,7 @@
   <head>
     <!-- this is a commment: you can change the title to anything you want but it is also fine to just leave it
     -->
-    <title>Final-Template-gltf</title>
+    <title>template-title</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
@@ -20,12 +20,11 @@
     <script src="aframe-extras.loaders.min.js"></script>
 
     <!-- this is a comment: the alert below produces a pop up box when loaded to give information to users, 
-     you can edit the message in between the inverted commas or remove it entirely 
-     (not recommended as some android users have werid camera behaviours which users need to be guided to overcome)
+     you can edit the message in between the inverted commas or remove it entirely
     -->
     <script>
       window.onload = function () {
-        alert("Android users experiencing extreme camera zoom should go to browser setting, accessibility/display/appearance, turn off force enable zoom/manual zoom/control zoom\n\nClick on X on the top right hand to partially hide background");
+        alert("Android users experiencing extreme camera zoom should go to browser setting, accessibility/webpage view, turn off force enable zoom/pinch to zoom in/out of webpages\n\nClick on X on the top right hand to partially hide background");
       };
     </script>
   </head>
@@ -49,13 +48,13 @@
       id="scene"
     >
       <a-assets>
-        <!-- this is a commment: under id replace 1s2s with your model name inside the inverted commas, 
-          under src replace 1s2s with filename inside the inverted commas, make sure the .gltf is there immediately behind the filename,
+        <!-- this is a commment: under id replace all "template" with your exact model name inside the inverted commas, 
+          under src replace "template" with model name inside the inverted commas, make sure the .gltf is there immediately behind the filename,
           make sure that the model file is placed in the same repository where this index.html file is located
         -->
         <a-asset-item
-          id="1s2s"
-          src="1s2s.gltf"
+          id="template"
+          src="template.gltf"
         >
         </a-asset-item>
       </a-assets>
@@ -79,16 +78,16 @@
         >
         </a-sky>        
         
-      <!-- this is a commment: under id replace 1s2s with filename inside the inverted commas, make sure the -model is there immediately behind the filename,
-        under id replace 1s2s with id name from a-asset-item above inside the inverted commas, make sure the # is there immediately in front of the filename,
+      <!-- this is a commment: for "id", replace "template" with model name inside the inverted commas, make sure the "-model" is there immediately behind the model name,
+        for "gltf-model", replace "#template" with model name from a-asset-item above inside the inverted commas, make sure the # is there immediately in front of the filename,
         you can leave position unchanged, but you can modify the x y z coordinates to adjust where your model appears above the Hiro Marker, if necessary,
         you can leave rotation unchanged, but you can modify the x y z rotation to adjust the angle that your model appears above the Hiro Marker, if necessary,
         you can leave scale unchanged, but you can modify the x y z scale to adjust the size of your model when it first loads, if necessary,
-        if your model is animated, type (animation-mixer) without the brackets in another line below gesture-handler with the same alignment
+        if your model is animated, type "animation-mixer" without the inverted commas in another line below gesture-handler with the same alignment
       -->
         <a-entity
-          id="1s2s-model"
-          gltf-model="#1s2s"
+          id="template-model"
+          gltf-model="#template"
           position="0 0 0"
           rotation="0 0 0"
           scale="1 1 1"
